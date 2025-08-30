@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f7f4fb;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #6a1b9a, #ab47bc);
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  background: #fff;
+  color: #6a1b9a;
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ffe082;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #6a1b9a;
+  text-align: center;
+}
+
+p, li {
+  font-size: 1.1em;
+}
+
+/* Calendar */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+th {
+  background: #6a1b9a;
+  color: #fff;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  font-style: italic;
+}
+
+/* References */
+/* References section */
+#references {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap; /* prevents wrapping */
+}
+
+.ref {
+  text-align: center;
+}
+.ref img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6a1b9a;
+}
+
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Documents */
+.docs-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.docs-grid a {
+  display: block;
+  background: #6a1b9a;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.docs-grid a:hover {
+  background: #8e24aa;
+}
+
+/* Contact */
+form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+}
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+button[type="submit"] {
+  background: #6a1b9a;
+  color: #fff;
+}
+button[type="reset"] {
+  background: #ccc;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #6a1b9a, #ab47bc);
+  color: #fff;
+  margin-top: 40px;
+}
+footer a {
+  color: #ffe082;
+}
+
+/* Slider */
+.slider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.slides {
+  display: flex;
+  width: 300%; /* 3 images */
+  animation: slide 12s infinite;
+}
+.slides img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+.course-img {
+  display: block;
+  margin: 0 auto 20px auto; /* center image with spacing */
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Course section */
+.courses-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  margin-top: 20px;
+}
+
+.course-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  font-weight: bold;
+  width: 200px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  background: #f3e5f5; /* light purple hover */
+  cursor: pointer;
+}
